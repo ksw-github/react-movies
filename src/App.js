@@ -20,7 +20,9 @@ function App() {
     path: "/about",
     element: <Layout><About /></Layout>,
     },
-  ]);
+  ],{
+    basename: process.env.PUBLIC_URL
+  });
 
   return (
       <RouterProvider router={router} />
